@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orkut - Perfil</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    background: #e6ecf5;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* TOPO */
+.topo {
+    background: #f06292;
+    color: #fff;
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* MENU */
+.menu {
+    background: #dbe4f3;
+    padding: 6px;
+    text-align: center;
+}
+
+.menu span {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #3b5998;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 960px;
+    margin: 10px auto;
+    background: #fff;
+    border: 1px solid #c9d7f1;
+}
+
+/* PERFIL */
+.perfil {
+    background: #f5f7fb;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #c9d7f1;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.foto img {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #c9d7f1;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    margin: 5px 0;
+    color: #3b5998;
+}
+
+/* ÍCONES PERFIL */
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.icones div {
+    text-align: center;
+    font-size: 12px;
+    width: 60px;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* COLUNAS */
+.coluna-esq, .coluna-dir {
+    width: 220px;
+    background: #f5f7fb;
+    padding: 10px;
+}
+
+.coluna-centro {
+    flex: 1;
+    padding: 10px;
+}
+
+/* CAIXAS */
+.caixa {
+    border: 1px solid #c9d7f1;
+    margin-bottom: 12px;
+}
+
+.caixa-titulo {
+    background: #dbe4f3;
+    padding: 6px;
+    font-weight: bold;
+    color: #3b5998;
+}
+
+.caixa-conteudo {
+    padding: 8px;
+}
+
+/* DEPOIMENTOS */
+.depoimento {
+    background: #f9f9f9;
+    border: 1px dashed #c9d7f1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-weight: bold;
+    color: #3b5998;
+}
+
+/* COMUNIDADES */
+.comunidade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comunidade img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c9d7f1;
+    margin-right: 6px;
+    object-fit: cover;
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    font-size: 11px;
+    color: #777;
+    padding: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .conteudo { flex-direction: column; }
+    .coluna-esq, .coluna-dir { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topo">orkut</div>
+
+<div class="menu">
+    <span>Perfil</span>
+    <span>Recados</span>
+    <span>Fotos</span>
+    <span>Vídeos</span>
+    <span>Depoimentos</span>
+</div>
+
+<div class="container">
+
+<!-- PERFIL -->
+<div class="perfil">
+    <div class="foto">
+        <img src="beu.jpeg">
+    </div>
+    <div class="info">
+        <h2>🎂 Rebecca Almeida</h2>
+        <p>Status: comemorando meu dia 💖</p>
+        <p>Cidade: Pequena Paris</p>
+        <p>Relacionamento: namorando 😄</p>
+
+        <div class="icones">
+            <div>📬<br>Recados</div>
+            <div>📸<br>Fotos</div>
+            <div>🎥<br>Vídeos</div>
+            <div>⭐<br>Fãs</div>
+            <div>👍<br>Legal</div>
+            <div>✔️<br>Confiável</div>
+            <div>💖<br>Amiga</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PLAYER DE MÚSICA -->
+<div class="caixa" style="margin:10px;">
+    <div class="caixa-titulo">🎶 Ouvindo agora:</div>
+    <div class="caixa-conteudo" style="text-align:center;">
+        <audio controls>
+            <source src="rbd.mpeg" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+        <p style="font-size:11px; color:#777;">Clique em ▶ para tocar 💖</p>
+    </div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="conteudo">
+
+<!-- CENTRO -->
+<div class="coluna-centro">
+    <div class="caixa">
+        <div class="caixa-titulo">💬 Depoimentos</div>
+        <div class="caixa-conteudo">
+
+            <div class="depoimento">
+    <p class="autor">💌 Edmundo Bomfim</p>
+    <p>
+        Não te acho demais, pq tudo que é demais sobra 
+        e tudo o que sobra é resto; 
+        por isso te acho de menos, pois tudo o que é de menos
+        faz falta;
+        e tudo que faz falta é IMPORTANTE 
+        Te gosto muito miguxa!!
+        Feliz Aniversário, amor.
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Rafael Guirra</p>
+    <p>
+        ~ haha hOje eh diA de cOmEmoRarr o NIVER da Bêeeuhh !!! vc é D+
+        Tudoooh de melhor hj & sempre !! >-< ti amuuh s2"
+        <br><br>
+        ass: o Taal do rafahh guirra =D
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Nathalia Andrade</p>
+    <p>
+        O topo é meu!!!!! <br><br>
+        Que felicidade é poder comemorar mais um ano de vida com você, best! 
+        E assim como o tema da sua festa, nossa amizade remonta aos saudosos anos 2000. 
+        Como já te disse uma vez, isso é só uma prova da importância que temos na vida uma da outra e 
+        da força da nossa amizade durante todo esse tempo. 
+        Acredito que a essa altura nada mais precisa ser dito, 
+        pois já demonstramos durante as quase duas décadas de amizade que temos, 
+        mas vale reforçar: te amo, sua felicidade é minha felicidade 
+        e você pode contar comigo nos seus piores e melhores dias, sempre. ❤️
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Ligia Amorim</p>
+    <p>
+        ✨💖 Rebecca 💖✨ <br>
+        Vim aqui deixar meu recadinho básico porque amizade assim NÃO pode ficar sem depoimento 😌✍️
+        Primeiro de tudo: obrigada por ser essa pessoa maravilhosa, parceira pra rir, reclamar da vida e fingir maturidade quando precisa 😂💅
+        Nunca mude (mentira, mude só pra melhor 😜), continue sendo essa Rebecca maravilhosa que a gente amaaa 🥹💕
+        Conta comigo sempre, viu? Pra tudo: risadas, desabafos, fotos feias e momentos aleatórios 🫂✨
+        Te amo, sua diva do Orkut 💎✨
+        ✨💖✨💖✨💖✨
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Vilma Karelis</p>
+    <p>
+        Oiiiiiii <br>
+        Que esse novo ciclo seja incrível, cheio de coisas maravilhosas, conquistas, paz, saúde, 
+        sucesso & mta felicidade ✨🌈
+        Que Deus continue te abençoando sempre e iluminando seus caminhos 🙏💖
+        Aproveita mtooo essa nova faseee!!!
+        Te amooo
+        <br>
+        #teamo #novociclo #amizade #s2 #best 💕
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Matheus Gomes</p>
+    <p>
+        Oieee ^^ <br>
+        Passando aki para lhe desejar um felizzz niver s2 s2. 
+        Que Deus continue te abençoando sempre, desejo mta felicidade, paz, sucesso, dinheiro, 
+        saúde & o resto, a gente corre atrás. Espero que esteja aproveitando bastante seu diaaa!!!!!
+        <br>
+        amooo vç sz s2
+        <br>
+        #happybday #parabens #beu #niver
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Clara Lins</p>
+    <p>
+        migahhh, FELIZZZZ ANIIIVER 🎉🎉🥳🥳🥳 <br>
+        Desejo a vc td de meeeelhor, muita paz e amor ✌🏻❤️ 
+        Amoo vc!!
+        <br>
+        Bjsss, Clarinháàh
+    </p>
+</div>
+
+<br>
+
+<div class="depoimento">
+    <p class="autor">💬 Ithamar Filho</p>
+    <p>
+        Oi meu mo… <br>
+        Passando aqui pra dizer FELIZ ANIVERSÁRIO! 🎉
+        Você deixa meus dias mil vezes mais leves, alegres e completos…
+        você ilumina tudo por onde passa! ✨
+        Que Deus te abençoe, te guarde e brilhe sempre no seu caminho,
+        porque você merece tudo de melhor!
+        Você é especial demais na minha vida 
+        e na vida de todo mundo que tem a sorte de te conhecer. 💕
+        <br>
+        Feliz vida, meu amor! ❤️
+        Nunca se esqueça do quanto você é incrível… sempre!
+    </p>
+</div>
+
+</div> <!-- FECHA coluna-centro -->
+
+<div class="coluna-dir">
+
+    <div class="caixa">
+        <div class="caixa-titulo">🌐 Comunidades</div>
+
+        <div class="caixa-conteudo">
+
+            <div class="comunidade">
+                <img src="aniversario.gif">
+                Eu amo meu aniversário 🎂
+            </div>
+
+            <div class="comunidade">
+                <img src="saudade.webp">
+                Saudades do Orkut 💙
+            </div>
+
+            <div class="comunidade">
+                <img src="buddy.jpg">
+                BuddyPoke 
+            </div>
+
+            <div class="comunidade">
+                <img src="acordocedo.jpg">
+                Eu Odeio Acordar Cedo 
+            </div>
+
+        </div>
+    </div>
+
+</div> <!-- FECHA coluna-dir -->
+
+
+
+
